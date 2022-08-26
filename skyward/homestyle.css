@@ -1,0 +1,289 @@
+body {
+    background-image: linear-gradient(
+    to top,
+    rgb(253, 253, 253),
+    rgb(227, 239, 255));
+    background-repeat: no-repeat;
+    
+}
+
+a:visited, a {
+    text-decoration: none;
+    color: blue;
+}
+
+#nav{
+    display: flex;
+    transform: translateY(15px);   
+}
+
+.navbar {
+    background-color: rgb(227, 239, 255);
+    border: 1px solid lightgrey;
+    width: 100px;
+    height: 40px;
+    font-family:arial, sans-serif;
+    font-size: 13px;
+    
+}
+
+.navbar:hover{
+    background-color: rgb(125, 168, 225);
+    color: white;
+}
+
+#header {
+    background-color: white;
+    border-bottom: 1px solid rgb(176, 207, 248);
+}
+
+#extraInfo {
+    display: flex;
+}
+
+#miniNav {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 15px;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(225, 230, 233);
+    border-radius: 3px;
+    
+}
+
+.miniNavLink {
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+}
+
+#miniNavLink {
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: whitesmoke;
+}
+
+#skyward {
+    width: 100px;
+    height: 50px;
+}
+
+#extraInfo{
+    font-size: 20px;
+}
+
+#upperInfo {
+    color: rgb(37, 103, 146);
+    width: 40%;
+}
+
+#spacer {
+    width: 100%;
+    height: 20px;
+}
+
+#lowerNav{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.arrows {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.directionArrows {
+    width: 10px;
+    height: 10px;
+}
+
+#employeeAccess { 
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#briefcase{
+    margin-left: 10px;
+}
+
+.toolBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px #888888;
+    gap: 10px;
+    padding: 2px;
+    
+}
+
+.toolBarLinks {
+    text-decoration: none;
+}
+
+#exclaim {
+    background-color: rgb(240, 199, 62);
+}
+
+#notepad{
+    background-color: greenyellow;
+}
+
+#camera {
+    background-color: grey;
+}
+
+#star {
+    background-color: yellow;
+}
+
+#printer {
+    background-color: grey;
+}
+
+#dashboard {
+
+    padding: 10px;
+    background-color: white;
+    height: auto;
+    border: 2px solid rgb(52, 91, 174);
+    color: rgb(52, 91, 174);
+    width: 100%;
+    
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    'jump jump favorites favorites systems systems'
+    'recent recent news news print print'
+    'recent recent time time Off Off'
+    'forms forms time time events events';
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.title {
+    background-image: linear-gradient(
+    to top,
+    rgb(185, 197, 233),
+    rgb(36, 66, 132));
+    color: white;
+    width: 100%;
+
+}
+
+.italic {
+    font-style: italic;
+    color: black;
+}
+
+.jump {
+    grid-area: jump;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.favorites {
+    grid-area: favorites;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.systems {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: systems;
+
+}
+
+.recent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: recent;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    grid-area: news;
+}
+
+.print { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: print;
+
+}
+
+.forms { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: forms;
+}
+
+.time { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: time;
+}
+
+#inOrOut{
+    color: black;
+}
+
+.Off { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: Off;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: events;
+
+}
+
+.footer {
+    position:absolute;
+    top: 98% ;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+
+.inOrOut {
+    margin: 5px;
+    background-color: rgb(227, 239, 255);
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.inOrOut:hover { 
+    background-color: rgb(36, 66, 132);
+    color: white;
+}

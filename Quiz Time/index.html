@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fallingCube"></div>
+    <div id="fallingCube2"></div>
+    <div id="fallingCube3"></div>
+    <div id="fallingCube4"></div>
+    <div id="fallingCube5"></div>
+    <div id="fallingCube6"></div>
+    <div id="fallingCube7"></div>
+    <div id="fallingCube8"></div>
+    <div id="fallingCube9"></div>
+    <div id="fallingCube10"></div>
+    <div class="myCard">
+      Welcome To The Quiz Game<br />
+      <img
+        id="welcomeImg"
+        class="images"
+        src="list.jpg"
+        alt="picure of amoung us"
+      />
+      <p>What's Your Name?</p>
+      <input type="text" id="nameText" placeholder="Enter your name" /><br />
+      <button id="submit" type="submit">Submit</button>
+    </div>
+    <div id="firstQuestion" class="myCard">
+      <img class="images" src="among us white.png" />
+      <p>Is this sus?</p>
+      <div id="susBtn">
+        <button id="susBaka" type="button" onclick="play2()">SUS BAKA?</button>
+        <button id="ok" type="button" onclick="play()">ok</button>
+      </div>
+    </div>
+    <div id="secondQuestion" class="myCard">
+      <img id="cat" class="images" src="cat 2.jpg" /><br />
+      <p>What is this?</p>
+      <button id="thisIsACat" type="button">this is a cat</button>
+      <button id="thiccBoi" type="button">THICC BOI</button>
+    </div>
+    <div id="thirdQuestion" class="myCard">
+      <img class="images" src="wallet-3548021_1920.jpg" /><br />
+      <p>What year was this taken?</p>
+      <button id="pastYear" type="button">1920</button>
+      <button id="presentYear" type="button">2022</button>
+    </div>
+    <div id="scoreCard" class="myCard">
+      <img class="images" src="thinking_emoji.jpg" /><br />
+      <p>Congrats you finished?</p>
+      <p>
+        <label id="nameSubmittedText">"" </label> got
+        <label id="score">0 </label> correct
+      </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

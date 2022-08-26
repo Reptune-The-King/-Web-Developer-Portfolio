@@ -1,0 +1,117 @@
+*,
+* ::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 300px;
+  height: 100px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: move 5s ease-in-out infinite;
+}
+
+.rocketbody {
+  width: 100px;
+  height: 70px;
+  background-color: red;
+}
+
+.nose {
+  width: 0;
+  height: 0;
+  border: 35px solid transparent;
+  border-right: 0;
+  border-left: 75px solid black;
+}
+
+.cone {
+  width: 0;
+  height: 0;
+  border: 35px solid transparent;
+  border-right: 0;
+  border-left: 15px solid grey;
+}
+
+.fire {
+  width: 0;
+  height: 0;
+  border: 35px solid transparent;
+  border-left: 5px;
+  border-right: 50px solid yellow;
+}
+
+.window {
+  position: relative;
+  top: 25px;
+  left: 70px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  25%,
+  75% {
+    transform: translateY(250px);
+  }
+  50% {
+    transform: translateY(500px);
+  }
+}
+
+.comet {
+  width: 50px;
+  height: 25px;
+  background-color: brown;
+  position: absolute;
+  top: 500px;
+  left: 1000px;
+  animation: incoming var(--duration) ease-in infinite;
+}
+
+#coment1 {
+  top: 250px;
+  left: 900px;
+  --duration: 1.5s;
+}
+
+#coment2 {
+  top: 100px;
+  left: 1200px;
+  --duration: 1s;
+}
+
+#coment3 {
+  top: 500px;
+  left: 1200px;
+  --duration: 3s;
+}
+
+#coment4 {
+  top: 300px;
+  left: 1300px;
+  --duration: 2s;
+}
+
+@keyframes incoming {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}

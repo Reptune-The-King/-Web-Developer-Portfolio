@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Manager</title>
+    <link rel="stylesheet" href="./clockstyle.css" />
+  </head>
+  <body>
+    <h2 id="true">True Time Quick Entry</h2>
+    <div id="spacer">
+      <div id="current">
+        <label id="title" class="timeInfo">Current Status</label>
+        <label id="statusHere" class="timeInfo">Out</label>
+        <div id="calendar">
+          <input type="time" id="time" class="timeInfo" />
+          <button
+            type="submit"
+            id="submit"
+            class="timeInfo"
+            onclick="myClick()"
+          >
+            In/Out
+          </button>
+          <img src="./sfdr.png" />
+        </div>
+      </div>
+    </div>
+    <script src="./clock.js"></script>
+  </body>
+</html>

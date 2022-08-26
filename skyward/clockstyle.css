@@ -1,0 +1,62 @@
+body {
+    background-image: linear-gradient(
+    to top,
+    rgb(253, 253, 253),
+    rgb(227, 239, 255));
+    background-repeat: no-repeat;
+
+}
+
+#true {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#spacer { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#current {
+    
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+.timeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+
+}
+
+#submit { 
+    color: rgb(37, 103, 146);
+    background-color: #f4f4f4;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    width: 100px;
+    height: 75px;
+    font-size: 25x;
+    margin: 10px;
+    
+}
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit:hover{
+    background-color: #3158b8;
+    color: white;
+}

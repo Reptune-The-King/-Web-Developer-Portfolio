@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="homestyle.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="extraInfo">
+        <img id="skyward" src="skyward.png" />
+        <label id="upperInfo">San Felipe Del Rio CISD - Live Database</label>
+        <div id="miniNav">
+          <label>Programmer1</label>
+          <a href="forgot.html" class="miniNavLink">Account</a>
+          <a href="#" class="miniNavLink">Preferences</a>
+          <a href="#" class="miniNavLink">Exit</a>
+          <a href="#" class="miniNavLink" id="miniNavLink">?</a>
+        </div>
+      </div>
+      <navbar id="nav">
+        <button class="navbar">Home</button>
+        <button class="navbar">Employee Information</button>
+        <button class="navbar"><a href="./clock.html">Time Off</a></button>
+        <button class="navbar"><a href="./clock.html">True Time</a></button>
+        <button class="navbar">Employee Review</button>
+      </navbar>
+    </div>
+    <div id="spacer"></div>
+    <div id="lowerNav">
+      <div class="arrows">
+        <a href="" class="direction">
+          <img src="./icons/caret-left-fill.svg" class="directionArrow" />
+        </a>
+        <a href="" class="direction">
+          <img src="./icons/caret-right-fill.svg" class="directionArrow" />
+        </a>
+        <img src="./icons/briefcase-fill.svg" id="briefcase" />
+        <label id="employeeAccess">Employee Access</label>
+      </div>
+      <div class="toolBar">
+        <a href="./clock.html">
+          <img src="./icons/clock-history.svg" id="clock" />
+        </a>
+        <a href="">
+          <img src="./icons/exclamation-circle.svg" id="exclaim" />
+        </a>
+        <a href="">
+          <img src="./icons/journal-check.svg" id="notepad" />
+        </a>
+        <a href="">
+          <img src="./icons/camera.svg" id="camera" />
+        </a>
+        <a href="">
+          <img src="./icons/star.svg" class="star" id="star" />
+        </a>
+        <a href="">
+          <label for="star" class="toolBarLinks">Favorites</label>
+        </a>
+        <a href="">
+          <img src="./icons/window-stack.svg" id="window" />
+          <label for="window" class="toolBarLinks"> New Window</label>
+        </a>
+        <a href="">
+          <img src="./icons/printer.svg" id="printer" />
+          <label for="printer" class="toolBarLinks"> My Print Queue</label>
+        </a>
+      </div>
+    </div>
+    <div class="gridContainer">
+      <div class="jump" id="dashboard">
+        <label class="title">Jump to Other Dashboards</label>
+        <label><a href="./forgot.html">Skyward User</a></label>
+        <label><a href="./home.html">Employee</a></label>
+      </div>
+      <div class="recent" id="dashboard">
+        <label class="title">Recent Programs</label>
+        <label><a href="./home.html">Employee Access Home</a></label>
+        <label><a href="./mockup.html">Quick Entry</a></label>
+        <label><a href="./mockup.html">Budget Revisions</a></label>
+        <label><a href="">Transfers</a></label>
+        <label
+          ><a href="./mockup.html"
+            >Accounting Update - Budget Revisions</a
+          ></label
+        >
+        <label><a href="./mockup.html">Financial Management Home</a></label>
+        <label><a href="./mockup.html">Budgetary Data Mining</a></label>
+        <label><a href="./mockup.html">Submit Transfers</a></label>
+        <label
+          ><a href="./mockup.html"
+            >Accounting Update - Budget Transfers</a
+          ></label
+        >
+        <label><a href="./mockup.html">My Requests</a></label>
+      </div>
+      <div class="forms" id="dashboard">
+        <label class="title">Online Forms to be Completed</label>
+        <label class="italic">No Online Forms to be Completed</label>
+      </div>
+      <div class="favorites" id="dashboard">
+        <label class="title">Favorites</label>
+        <label><a href="./clock.html">My Status</a></label>
+        <label><a href="./mockup.html">Financial Management</a></label>
+        <label><a href="./mockup.html"> My Purchase Orders</a></label>
+        <label><a href="./mockup.html">Budgetary Data Mining</a></label>
+        <label
+          ><a href="./mockup.html"
+            >Accounting Update - Budget Revisions</a
+          ></label
+        >
+      </div>
+      <div class="news" id="dashboard">
+        <label class="title">District News</label>
+        <label class="italic"> No News to display</label>
+      </div>
+      <div class="time" id="dashboard">
+        <label class="title">True Time Current Status</label>
+        <label>Status:</label>
+        <label id="inOrOutLabel" for="inOrOut">Gone</label>
+        <button id="In" class="inOrOut">In</button>
+        <button id="Lunch" class="inOrOut">Lunch</button>
+        <button id="Out" class="inOrOut">Out</button>
+      </div>
+      <div class="systems" id="dashboard">
+        <label class="title">Jump to Other Systems</label>
+        <label><a href="./home.html">Employee Access</a></label>
+        <label><a href="./mockup.html">Finance Management</a></label>
+      </div>
+      <div class="print" id="dashboard">
+        <label class="title">My Print Queue</label>
+        <label>None</label>
+      </div>
+      <div class="Off" id="dashboard">
+        <label class="title">My Time Off Status </label>
+        <label>Request pending - 2 days</label>
+      </div>
+      <div class="events" id="dashboard">
+        <label class="title">Calendar Events</label>
+        <label class="italic">No Calendar Events available</label>
+      </div>
+    </div>
+    <div class="footer">
+      <label>@2022 Skyward, Inc. All Rights Reserved</label>
+      <label>Live Database</label>
+      <label>Windows 10/ Chrome 104</label>
+    </div>
+    <script src="./clock.js"></script>
+  </body>
+</html>
